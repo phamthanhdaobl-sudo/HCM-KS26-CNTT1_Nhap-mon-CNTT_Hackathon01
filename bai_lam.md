@@ -1,10 +1,10 @@
 # BÀI LÀM – HACKATHON 01
 
 - **Mã đề:** 20
-- **Họ tên:** 
-- **Lớp:** 
+- **Họ tên:**Phạm Thành Đạo 
+- **Lớp:**HCM-KS26-CNTT1 
 - **Link repository:** 
-- **Hệ điều hành (Windows/macOS):** 
+- **Hệ điều hành (Windows/macOS):** macOS
 
 ## 4.2. Thao tác máy tính cơ bản bằng CLI
 
@@ -73,14 +73,21 @@ phamdao@MacBook-Pro-cua-Pham salon-toc-website %
 ### Lệnh chạy (Windows: nếu dùng Phụ lục 2 thì ghi cả 2 lệnh)
 
 ```shell
-# Ghi lệnh vào đây (xoá dòng này)
+grep -p 'ERROR' /Users/phamdao/Documents/salon-toc-website/logs/salon.log   > /Users/phamdao/Documents/salon-toc-website/logs/daily_report.txt
 
 ```
 
 ### Kết quả hiển thị
 
-```text
-(Dán kết quả vào đây – xoá dòng này)
+```echo"==================================================
+       === TONG HOP LOG ===
+       Ngay gio: 28/10/2026 08:43
+==================================================
+
+
+--------------------------------------------------
+CAC DONG CHUA WARNING:4
+SO DONG CHUA ERROR:5"
 
 ```
 
@@ -89,14 +96,14 @@ phamdao@MacBook-Pro-cua-Pham salon-toc-website %
 ### Lệnh
 
 ```shell
-# Ghi lệnh vào đây (xoá dòng này)
+
 
 ```
 
 ### Kết quả đếm (Windows: giá trị Count; macOS: con số in ra)
 
 ```text
-(Dán kết quả vào đây – xoá dòng này)
+5
 
 ```
 
@@ -105,14 +112,30 @@ phamdao@MacBook-Pro-cua-Pham salon-toc-website %
 ### Các lệnh đã chạy
 
 ```shell
-# Ghi lần lượt các lệnh đã chạy, mỗi lệnh một dòng (xoá dòng này)
+# echo "       === TONG HOP LOG ==="
+
+ echo "       Ngay gio: $(date '+%d/%m/%Y %H:%M')"
+
+ echo "=================================================="
+
+ echo ""
+
+ grep -p 'ERROR' /Users/phamdao/Documents/salon-toc-website/logs/salon.log   > /Users/phamdao/Documents/salon-toc-website/logs/daily_report.txt
 
 ```
 
 ### Nội dung file logs/tong_hop.txt
 
 ```text
-(Dán kết quả vào đây – xoá dòng này)
+==================================================
+       === TONG HOP LOG ===
+       Ngay gio: 28/10/2026 08:43
+==================================================
+
+
+--------------------------------------------------
+CAC DONG CHUA WARNING:4
+SO DONG CHUA ERROR:5
 
 ```
 
